@@ -12,9 +12,11 @@
 		A4943F3F280A8500007E1B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4943F3D280A8500007E1B24 /* Main.storyboard */; };
 		A4943F41280A8502007E1B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4943F40280A8502007E1B24 /* Assets.xcassets */; };
 		A4943F44280A8502007E1B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4943F42280A8502007E1B24 /* LaunchScreen.storyboard */; };
+		DFD3766F589551DAD9657591 /* Pods_MakePlan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0606F057B1D919D87E250A8 /* Pods_MakePlan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440EE3A28CDC5B00378EB20E /* Pods-MakePlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakePlan.release.xcconfig"; path = "Target Support Files/Pods-MakePlan/Pods-MakePlan.release.xcconfig"; sourceTree = "<group>"; };
 		A4943F36280A8500007E1B24 /* MakePlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakePlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4943F39280A8500007E1B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4943F3B280A8500007E1B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		A4943F40280A8502007E1B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4943F43280A8502007E1B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4943F45280A8502007E1B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0606F057B1D919D87E250A8 /* Pods_MakePlan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakePlan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31EC975F90FE4DDBA1646A0 /* Pods-MakePlan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakePlan.debug.xcconfig"; path = "Target Support Files/Pods-MakePlan/Pods-MakePlan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD3766F589551DAD9657591 /* Pods_MakePlan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2580FAF56491AF78CA634C42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0606F057B1D919D87E250A8 /* Pods_MakePlan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A4943F2D280A8500007E1B24 = {
 			isa = PBXGroup;
 			children = (
 				A4943F38280A8500007E1B24 /* MakePlan */,
 				A4943F37280A8500007E1B24 /* Products */,
+				D89AAA88168CE79FC51A4ECE /* Pods */,
+				2580FAF56491AF78CA634C42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = MakePlan;
 			sourceTree = "<group>";
 		};
+		D89AAA88168CE79FC51A4ECE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E31EC975F90FE4DDBA1646A0 /* Pods-MakePlan.debug.xcconfig */,
+				440EE3A28CDC5B00378EB20E /* Pods-MakePlan.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4943F48280A8502007E1B24 /* Build configuration list for PBXNativeTarget "MakePlan" */;
 			buildPhases = (
+				1564D1EB97C6773348DE278E /* [CP] Check Pods Manifest.lock */,
 				A4943F32280A8500007E1B24 /* Sources */,
 				A4943F33280A8500007E1B24 /* Frameworks */,
 				A4943F34280A8500007E1B24 /* Resources */,
+				A4943F4B280A87A5007E1B24 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1564D1EB97C6773348DE278E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakePlan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4943F4B280A87A5007E1B24 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A4943F32280A8500007E1B24 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		A4943F49280A8502007E1B24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E31EC975F90FE4DDBA1646A0 /* Pods-MakePlan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		A4943F4A280A8502007E1B24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 440EE3A28CDC5B00378EB20E /* Pods-MakePlan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
