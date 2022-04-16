@@ -69,14 +69,46 @@
 		A4943F38280A8500007E1B24 /* MakePlan */ = {
 			isa = PBXGroup;
 			children = (
-				A4943F39280A8500007E1B24 /* AppDelegate.swift */,
-				A4943F3B280A8500007E1B24 /* ViewController.swift */,
-				A4943F3D280A8500007E1B24 /* Main.storyboard */,
-				A4943F40280A8502007E1B24 /* Assets.xcassets */,
-				A4943F42280A8502007E1B24 /* LaunchScreen.storyboard */,
+				A4FEA63C280ACAA700169903 /* Resource */,
+				A4FEA63B280ACA8700169903 /* Application */,
+				A4FEA639280ACA7500169903 /* Scenes */,
 				A4943F45280A8502007E1B24 /* Info.plist */,
 			);
 			path = MakePlan;
+			sourceTree = "<group>";
+		};
+		A4FEA639280ACA7500169903 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A4943F42280A8502007E1B24 /* LaunchScreen.storyboard */,
+				A4FEA63A280ACA8000169903 /* Tabbar */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A4FEA63A280ACA8000169903 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				A4943F3B280A8500007E1B24 /* ViewController.swift */,
+				A4943F3D280A8500007E1B24 /* Main.storyboard */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		A4FEA63B280ACA8700169903 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A4943F39280A8500007E1B24 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A4FEA63C280ACAA700169903 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A4943F40280A8502007E1B24 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		D89AAA88168CE79FC51A4ECE /* Pods */ = {
@@ -85,7 +117,6 @@
 				E31EC975F90FE4DDBA1646A0 /* Pods-MakePlan.debug.xcconfig */,
 				440EE3A28CDC5B00378EB20E /* Pods-MakePlan.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
